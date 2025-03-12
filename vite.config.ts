@@ -14,7 +14,6 @@ export default defineConfig({
         families: [
           {
             name: "Geist",
-            // src: path.resolve(__dirname, "src/assets/fonts/geist/*.woff2"),
             src: './src/assets/fonts/geist/*.woff2',
           },
         ],
