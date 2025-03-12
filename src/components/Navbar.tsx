@@ -1,27 +1,63 @@
 import React from "react";
-import { Icon } from "@iconify/react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
+import { DarkModeToggle } from "./DarkModeToggle";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Navbar: React.FC = () => {
   return (
-    <div className="w-full p-4 flex items-center justify-between">
-      <div className="flex items-center gap-x-7">
-        <h1 className="font-bold text-xl">Fransbeam</h1>
-        <ul className="flex items-center gap-x-7 text-sm text-neutral-500">
-          <Link to="/">Home</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/designs">Designs</Link>
-          <Link to="/about-me">About me</Link>
-        </ul>
+    <>
+      <div className="hidden lg:flex lg:w-full lg:p-4 lg:items-center lg:justify-between">
+        <div className="flex items-center gap-x-7">
+          <h1 className="font-bold text-xl">Fransbeam</h1>
+          <ul className="flex items-center gap-x-7 text-sm text-neutral-500">
+            <Link to="/">Home</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/designs">Designs</Link>
+            <Link to="/about-me">About me</Link>
+          </ul>
+        </div>
+        <div className="space-x-3 flex items-center">
+          <Button size="sm">Resume</Button>
+          <DarkModeToggle />
+        </div>
       </div>
-      <div className="space-x-3">
-        <Button size="sm">Resume</Button>
-        <Button variant="ghost" size="sm">
-          <Icon icon="lucide:moon" />
-        </Button>
+      <div className="w-full flex items-center justify-between p-4 lg:hidden">
+        <div>
+          <h1 className="font-bold text-lg">Fransbeam</h1>
+        </div>
+        <Drawer direction="right">
+          <DrawerTrigger>
+            <Button size="sm">
+              <Icon icon="lucide:menu" fontSize={24} />
+            </Button>
+          </DrawerTrigger>
+          <DrawerContent>
+            <DrawerHeader>
+              <DrawerTitle className="text-2xl">Fransbeam</DrawerTitle>
+              <DrawerDescription>
+                <ul className="pt-20 flex flex-col gap-y-7 text-lg text-neutral-500">
+                  <Link to="/">Home</Link>
+                  <Link to="/projects">Projects</Link>
+                  <Link to="/designs">Designs</Link>
+                  <Link to="/about-me">About me</Link>
+                </ul>
+              </DrawerDescription>
+            </DrawerHeader>
+          </DrawerContent>
+        </Drawer>
       </div>
-    </div>
+    </>
   );
 };
 
