@@ -1,0 +1,89 @@
+[
+  {
+    "img": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Local Po",
+    "desc": "Lorem ipsum dolor sit amet consectetur. Sociis auctor massa quam laoreet cursus pulvinar pulvinar ultrices. Arcu bibendum eget et parturient aliquam magna porttitor sit malesuada. Lorem nullam iaculis donec lobortis eu habit ant amet mattis elit. Vulputate neque vel vivamus consequat non aliquet bibendum feugiat dolor.",
+    "github": "/",
+    "live_demo": "/",
+    "techstacks": [
+      {
+        "title": "React",
+        "icon": "reactjs"
+      },
+      {
+        "title": "Laravel",
+        "icon": "laravel"
+      },
+      {
+        "title": "Tailwind CSS",
+        "icon": "tailwindcss"
+      },
+      {
+        "title": "Tanstack Query",
+        "icon": "redux"
+      },
+      {
+        "title": "Mantine UI",
+        "icon": null
+      }
+    ]
+  },
+  {
+    "img": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Journal App",
+    "desc": "Lorem ipsum dolor sit amet consectetur. Sociis auctor massa quam laoreet cursus pulvinar pulvinar ultrices. Arcu bibendum eget et parturient aliquam magna porttitor sit malesuada. Lorem nullam iaculis donec lobortis eu habit ant amet mattis elit. Vulputate neque vel vivamus consequat non aliquet bibendum feugiat dolor.",
+    "github": "/",
+    "live_demo": "/",
+    "techstacks": [
+      {
+        "title": "React",
+        "icon": "reactjs"
+      },
+      {
+        "title": "Laravel",
+        "icon": "laravel"
+      },
+      {
+        "title": "Tailwind CSS",
+        "icon": "tailwindcss"
+      },
+      {
+        "title": "Tanstack Query",
+        "icon": "redux"
+      },
+      {
+        "title": "Mantine UI",
+        "icon": null
+      }
+    ]
+  },
+  {
+    "img": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Journal App",
+    "desc": "Lorem ipsum dolor sit amet consectetur. Sociis auctor massa quam laoreet cursus pulvinar pulvinar ultrices. Arcu bibendum eget et parturient aliquam magna porttitor sit malesuada. Lorem nullam iaculis donec lobortis eu habit ant amet mattis elit. Vulputate neque vel vivamus consequat non aliquet bibendum feugiat dolor.",
+    "github": "/",
+    "live_demo": "/",
+    "techstacks": [
+      {
+        "title": "React",
+        "icon": "reactjs"
+      },
+      {
+        "title": "Laravel",
+        "icon": "laravel"
+      },
+      {
+        "title": "Tailwind CSS",
+        "icon": "tailwindcss"
+      },
+      {
+        "title": "Tanstack Query",
+        "icon": "redux"
+      },
+      {
+        "title": "Mantine UI",
+        "icon": null
+      }
+    ]
+  }
+]
