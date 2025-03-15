@@ -1,17 +1,19 @@
 import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
+import designs from "@/data/designs.json";
+import { Button } from "@/components/ui/button";
+import DesignList from "./DesignList";
 
 const DesignsProject: React.FC = () => {
   return (
     <>
-      <div className="w-full h-full py-20">
+      <div className="w-full h-full py-24">
         <div className="px-4 max-w-7xl m-auto">
-          <div>
+          <div className="bg-white rounded-2xl backdrop-blur-sm max-w-max">
             <div>
               <h3 className="uppercase text-xs font-semibold">
                 Crafting Engaging Experiences
               </h3>
-              <h1 className="font-bold text-lg md:text-2xl">
+              <h1 className="font-bold text-2xl md:text-3xl">
                 UI/UX Design Projects
               </h1>
             </div>
@@ -22,44 +24,14 @@ const DesignsProject: React.FC = () => {
               interactions to elevate products that users love.
             </p>
           </div>
-          <div className="">
-            <div className="grid grid-cols md:grid-cols-2 gap-4 mt-20">
-              <Card className="py-2">
-                <CardContent className="px-2">
-                  <img
-                    className="rounded-md w-auto h-auto"
-                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
-                  />
-                </CardContent>
-              </Card>
-              <Card className="py-2">
-                <CardContent className="px-2">
-                  <img
-                    className="rounded-md w-auto h-auto"
-                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
-                  />
-                </CardContent>
-              </Card>
-              <Card className="py-2">
-                <CardContent className="px-2">
-                  <img
-                    className="rounded-md w-auto h-auto"
-                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
-                  />
-                </CardContent>
-              </Card>
-              <Card className="py-2">
-                <CardContent className="px-2">
-                  <img
-                    className="rounded-md w-auto h-auto"
-                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
-                  />
-                </CardContent>
-              </Card>
+          <div className="mt-20 space-y-20">
+            <div className="grid grid-cols md:grid-cols-2 gap-6 mt-20">
+              {designs.map((design, index: number) => (
+                <DesignList design={design} key={index} />
+              ))}
+            </div>
+            <div className="w-full flex justify-center">
+              <Button>View more designs</Button>
             </div>
           </div>
         </div>

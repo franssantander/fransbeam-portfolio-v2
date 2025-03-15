@@ -1,0 +1,100 @@
+{
+  "frontend_stacks": [
+    {
+      "icon": "reactjs",
+      "title": "React"
+    },
+    {
+      "icon": "typescript",
+      "title": "TypeScript"
+    },
+    {
+      "icon": "tailwindcss",
+      "title": "Tailwind CSS"
+    },
+    {
+      "icon": "reactquery",
+      "title": "Tanstack Query"
+    },
+    {
+      "icon": "framer",
+      "title": "Framer Motion"
+    },
+    {
+      "icon": "redux",
+      "title": "Redux Toolkit"
+    },
+    {
+      "icon": "sass",
+      "title": "Sass"
+    },
+    {
+      "icon": "css3",
+      "title": "CSS"
+    },
+    {
+      "icon": "redux",
+      "title": "Zustand"
+    },
+    {
+      "icon": "shadcnui",
+      "title": "Shadcn UI"
+    },
+    {
+      "icon": null,
+      "title": "Mantine UI"
+    },
+    {
+      "icon": null,
+      "title": "Daisy UI"
+    }
+  ],
+  "backend_stacks": [
+    {
+      "icon": "laravel",
+      "title": "Laravel"
+    },
+    {
+      "icon": "php",
+      "title": "PHP"
+    },
+    {
+      "icon": "mysql",
+      "title": "MySQL"
+    }
+  ],
+  "tools": [
+    {
+      "icon": "git",
+      "title": "Git"
+    },
+    {
+      "icon": "figma",
+      "title": "Figma"
+    },
+    {
+      "icon": "postman",
+      "title": "Postman"
+    },
+    {
+      "icon": "docker",
+      "title": "Docker"
+    },
+    {
+      "icon": "cypress",
+      "title": "Cypress"
+    },
+    {
+      "icon": "wordpress",
+      "title": "Wordpress"
+    },
+    {
+      "icon": null,
+      "title": "Salesforce"
+    },
+    {
+      "icon": null,
+      "title": "Zuora"
+    }
+  ]
+}

@@ -5,18 +5,30 @@ import { Card, CardContent } from "@/components/ui/card";
 import StackIcon from "tech-stack-icons";
 import { Badge } from "@/components/ui/badge";
 
-const ProjectList: React.FC = (props) => {
+type Project = {
+  project: {
+    img: string;
+    title: string;
+    type: string;
+    desc: string;
+    features: string[];
+    live_demo: string;
+    techstacks: string[];
+  };
+};
+
+const ProjectList: React.FC<Project> = (props) => {
   const { project } = props;
-  const { img, title, type, features, techstacks, live_demo } = project;
+  const { img, title, type, features, techstacks, desc, live_demo } = project;
   return (
     <>
-      <div className="flex flex-col md:flex-row md:items-center md:gap-x-4">
+      <div className="flex flex-col md:flex-row md:items-center md:gap-x-4 lg:gap-x-10">
         <Card className="py-2">
           <CardContent className="px-2">
             <img className="rounded-md w-auto h-auto" src={img} alt={title} />
           </CardContent>
         </Card>
-        <div className="space-y-4 mt-4">
+        <div className="space-y-4 mt-4 bg-white rounded-2xl backdrop-blur-sm">
           <div className="space-y-1">
             <h3 className="text-neutral-500 text-sm uppercase font-semibold">
               {type}
@@ -29,7 +41,7 @@ const ProjectList: React.FC = (props) => {
               </Button>
             </div>
           </div>
-          <p className="text-sm/6 text-neutral-500">{project.desc}</p>
+          <p className="text-sm/6 text-neutral-500">{desc}</p>
           {features.map((feature) => (
             <ul className="hidden md:block space-y-3">
               <li className="flex items-center gap-x-4">
@@ -39,7 +51,7 @@ const ProjectList: React.FC = (props) => {
             </ul>
           ))}
           <div className="flex flex-wrap items-center gap-3">
-            {techstacks.map((tech, index) => (
+            {techstacks.map((tech, index: number) => (
               <Badge variant="outline" key={index}>
                 <StackIcon className="w-4 h-4" name={tech.icon} />
                 {tech.title}

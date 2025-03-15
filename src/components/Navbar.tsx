@@ -1,13 +1,11 @@
 import React from "react";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { DarkModeToggle } from "../DarkModeToggle";
+import { DarkModeToggle } from "@/components/DarkModeToggle";
 import {
   Drawer,
-  DrawerClose,
   DrawerContent,
   DrawerDescription,
-  DrawerFooter,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,

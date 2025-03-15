@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "sd-icon.svg",
+    "title": "System Design",
+    "desc": "Lorem ipsum dolor sit amet consectetur. Non arcu orci habitasse amet condimentum. Blandit phasellus iaculis porta maecenas sed purus purus purus."
+  },
+  {
+    "icon": "uiux-icon.svg",
+    "title": "UX & UI",
+    "desc": "Lorem ipsum dolor sit amet consectetur. Non arcu orci habitasse amet condimentum. Blandit phasellus iaculis porta maecenas sed purus purus purus."
+  },
+  {
+    "icon": "webapp-icon.svg",
+    "title": "Web Application",
+    "desc": "Lorem ipsum dolor sit amet consectetur. Non arcu orci habitasse amet condimentum. Blandit phasellus iaculis porta maecenas sed purus purus purus."
+  },
+  {
+    "icon": "upskill-icon.svg",
+    "title": "Upskilling & Learning",
+    "desc": "Lorem ipsum dolor sit amet consectetur. Non arcu orci habitasse amet condimentum. Blandit phasellus iaculis porta maecenas sed purus purus purus."
+  }
+]
