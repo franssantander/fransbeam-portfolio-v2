@@ -1,9 +1,15 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 
 const HomeLayout: React.FC = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
       <div className="border-b">

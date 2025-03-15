@@ -1,7 +1,8 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { DarkModeToggle } from "@/components/DarkModeToggle";
+import navMenu from "@/data/navbar.json";
 import {
   Drawer,
   DrawerContent,
@@ -13,16 +14,28 @@ import {
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Navbar: React.FC = () => {
+  const location = useLocation();
   return (
     <>
       <div className="hidden max-w-7xl mx-auto items-center justify-between p-4 lg:flex">
         <div className="flex items-center gap-x-7">
-          <h1 className="font-bold text-xl">Fransbeam</h1>
+          <Link to="/" className="font-bold text-xl">
+            Fransbeam
+          </Link>
           <ul className="flex items-center gap-x-7 text-sm text-neutral-500">
-            <Link to="/">Home</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/designs">Designs</Link>
-            <Link to="/about-me">About me</Link>
+            {navMenu.map((menu, index) => (
+              <Link
+                className={
+                  location.pathname === menu.link
+                    ? "font-medium text-black"
+                    : ""
+                }
+                key={index}
+                to={menu.link}
+              >
+                {menu.menu}
+              </Link>
+            ))}
           </ul>
         </div>
         <div className="space-x-3 flex items-center">
