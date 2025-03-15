@@ -26,8 +26,8 @@ const Navbar: React.FC = () => {
           </ul>
         </div>
         <div className="space-x-3 flex items-center">
-          <Button size="sm">Resume</Button>
-          <DarkModeToggle />
+          <Button>Resume</Button>
+          {/* <DarkModeToggle /> */}
         </div>
       </div>
       <div className="w-full fixed border-b left-0 bg-white flex items-center justify-between p-4 lg:hidden">

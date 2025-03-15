@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
     <>
       <div className="w-full px-4 max-w-7xl m-auto h-dvh grid grid-cols items-center md:grid-cols-2">
         <div>
-          <div className="space-y-4">
+          <div className="space-y-4 bg-white/80 backdrop-blur-none">
             <div className="space-y-2">
               <h3 className="uppercase text-neutral-500 text-xs font-semibold">
                 Full-Stack Software Engineer | UI/UX Designer
@@ -24,11 +24,9 @@ const Hero: React.FC = () => {
               digital products that truly stand out.
             </p>
             <div className="flex items-center gap-x-3">
-              <Button size="sm">View my projects</Button>
-              <Button size="sm" variant="outline">
-                Email me
-              </Button>
-              <Button size="sm" variant="ghost">
+              <Button>View my projects</Button>
+              <Button variant="outline">Email me</Button>
+              <Button variant="ghost">
                 <Icon icon="lucide:github" fontSize={24} />
               </Button>
             </div>

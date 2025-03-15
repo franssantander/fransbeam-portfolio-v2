@@ -10,9 +10,9 @@ export default {
         textBlack: "#2D2727",
         textGray: "#737373",
         bgColor: "#e4e4e7",
-        primaryColor: "#3155FF",
+        primaryColor: "oklch(0.533 0.261 293.62)",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
