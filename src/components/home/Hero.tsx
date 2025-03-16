@@ -57,7 +57,14 @@ const Hero: React.FC = () => {
                     hidden: { opacity: 0, y: 20 },
                     visible: { opacity: 1, y: 0 },
                   }}
-                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  whileHover={{ scale: 1.1 }}
+                  transition={{
+                    duration: 0.5,
+                    ease: "easeOut",
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 15,
+                  }}
                 >
                   {index === 2 ? (
                     <Button variant="ghost">{item}</Button>

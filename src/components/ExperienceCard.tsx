@@ -15,7 +15,7 @@ const ExperienceCard: React.FC = (props) => {
               <img className="w-32" src={logo} alt={name} />
             </CardContent>
           </Card>
-          <div className="space-y-1">
+          <div className="space-y-1 bg-white rounded-full">
             <h1 className="font-bold text-lg">{position}</h1>
             <div className="flex items-center gap-x-3">
               <h3 className="text-neutral-500 text-xs">{name}</h3>
@@ -30,7 +30,7 @@ const ExperienceCard: React.FC = (props) => {
         </div>
         <ul className="list-disc space-y-3 text-neutral-500 text-sm/7 pt-5 ml-4">
           {exp_list.map((list, index) => (
-            <li key={index}>{list}</li>
+            <li className="bg-white" key={index}>{list}</li>
           ))}
         </ul>
       </div>

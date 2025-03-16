@@ -5,7 +5,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import StackIcon from "tech-stack-icons";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "motion/react";
-import { Link } from "react-router-dom";
 
 type Project = {
   project: {

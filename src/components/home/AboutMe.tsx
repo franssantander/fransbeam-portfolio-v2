@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import StackIcon from "tech-stack-icons";
 import experiences from "@/data/experiences.json";
 import ExperienceCard from "../ExperienceCard";
-import { useAnimation, motion } from "motion/react";
+import { motion } from "motion/react";
 
 const AboutMe: React.FC = () => {
   const [hoveredIndex, setHoveredIndex] = useState<string | null>(null);
@@ -46,7 +46,6 @@ const AboutMe: React.FC = () => {
                 {techstacks.frontend_stacks.map((tech, index) => (
                   <motion.div
                     key={`frontend-${index}`}
-                    className="cursor-pointer"
                     onHoverStart={() => handleHoverStart("frontend", index)}
                     onHoverEnd={handleHoverEnd}
                     whileHover={{ rotate: -6 }}
@@ -83,7 +82,6 @@ const AboutMe: React.FC = () => {
                 {techstacks.backend_stacks.map((tech, index) => (
                   <motion.div
                     key={`backend-${index}`}
-                    className="cursor-pointer"
                     onHoverStart={() => handleHoverStart("backend", index)}
                     onHoverEnd={handleHoverEnd}
                     whileHover={{ rotate: -6 }}
@@ -120,7 +118,6 @@ const AboutMe: React.FC = () => {
                 {techstacks.tools.map((tech, index) => (
                   <motion.div
                     key={`tools-${index}`}
-                    className="cursor-pointer"
                     onHoverStart={() => handleHoverStart("tools", index)}
                     onHoverEnd={handleHoverEnd}
                     whileHover={{ rotate: -6 }}

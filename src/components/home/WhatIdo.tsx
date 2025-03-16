@@ -1,6 +1,7 @@
 import React from "react";
 import whatIdo from "@/data/whatido.json";
 import line from "@/assets/vector/line.svg";
+import { motion } from "motion/react";
 
 const WhatIdo: React.FC = () => {
   return (
@@ -20,9 +21,23 @@ const WhatIdo: React.FC = () => {
             className="hidden lg:block md:absolute w-full left-0 bottom-14 opacity-60"
             src={line}
           />
-          <div className="grid grid-cols space-y-10 md:grid-cols-2 gap-x-10 lg:grid-cols-4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            transition={{ staggerChildren: 0.3 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="grid grid-cols space-y-10 md:grid-cols-2 gap-x-10 lg:grid-cols-4"
+          >
             {whatIdo.map((data, index) => (
-              <div className="space-y-3" key={index}>
+              <motion.div
+                key={index}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                className="space-y-3"
+              >
                 <img
                   src={`../../../public/icons/${data.icon}`}
                   alt="System Design"
@@ -31,9 +46,9 @@ const WhatIdo: React.FC = () => {
                   <h1 className="font-bold text-lg">{data.title}</h1>
                   <p className="text-neutral-500 text-sm/6">{data.desc}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

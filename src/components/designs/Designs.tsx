@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
 import DesignList from "../home/DesignList";
 import designs from "@/data/designs.json";
+import { motion } from "motion/react";
 
 const Designs: React.FC = () => {
   return (
@@ -23,11 +24,26 @@ const Designs: React.FC = () => {
             </p>
           </div>
           <div className="mt-20 space-y-20">
-            <div className="grid grid-cols md:grid-cols-2 gap-6 mt-20">
-              {designs.map((design, index: number) => (
-                <DesignList design={design} key={index} />
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              transition={{ staggerChildren: 0.3 }}
+              viewport={{ once: true, amount: 0.2 }}
+              className="grid grid-cols md:grid-cols-2 gap-6 mt-20"
+            >
+              {designs.map((design, index) => (
+                <motion.div
+                  key={index}
+                  variants={{
+                    hidden: { opacity: 0, x: -50 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                >
+                  <DesignList design={design} />
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
