@@ -30,11 +30,7 @@ const ProjectList: React.FC<Project> = (props) => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           viewport={{ once: false, amount: 0.2 }}
         >
-          <a
-            href="https://github.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={live_demo} target="_blank" rel="noopener noreferrer">
             <Card className="py-2 relative">
               <CardContent className="w-full h-full px-2 relative">
                 {/* <h1 className="absolute font-bold text-lg text-white p-4">
@@ -42,8 +38,8 @@ const ProjectList: React.FC<Project> = (props) => {
                   Quidem, voluptas?
                 </h1> */}
                 <img
-                  className=" rounded-md w-auto h-auto"
-                  src={img}
+                  className="rounded-md max-w-2xl h-auto object-cover"
+                  src={`../../../public/thumbnail/${img}`}
                   alt={title}
                 />
               </CardContent>

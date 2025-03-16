@@ -9,7 +9,11 @@ const DesignList: React.FC = (props) => {
     <Link to={link}>
       <Card className="py-2">
         <CardContent className="px-2">
-          <img className="rounded-md w-auto h-auto" src={img} alt={title} />
+          <img
+            className="rounded-md w-auto h-auto"
+            src={`../../../public/thumbnail/${img}`}
+            alt={title}
+          />
         </CardContent>
       </Card>
     </Link>
