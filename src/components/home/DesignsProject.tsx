@@ -2,6 +2,7 @@ import React from "react";
 import designs from "@/data/designs.json";
 import { Button } from "@/components/ui/button";
 import DesignList from "./DesignList";
+import { motion } from "motion/react";
 
 const DesignsProject: React.FC = () => {
   return (
@@ -23,11 +24,26 @@ const DesignsProject: React.FC = () => {
             </p>
           </div>
           <div className="mt-20 space-y-20">
-            <div className="grid grid-cols md:grid-cols-2 gap-6 mt-20">
-              {designs.map((design, index: number) => (
-                <DesignList design={design} key={index} />
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              transition={{ staggerChildren: 0.3 }}
+              viewport={{ once: false, amount: 0.2 }}
+              className="grid grid-cols md:grid-cols-2 gap-6 mt-20"
+            >
+              {designs.map((design, index) => (
+                <motion.div
+                  key={index}
+                  variants={{
+                    hidden: { opacity: 0, x: -50 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                >
+                  <DesignList design={design} />
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
             <div className="w-full flex justify-center">
               <Button>View more designs</Button>
             </div>

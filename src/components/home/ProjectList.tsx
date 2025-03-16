@@ -4,6 +4,8 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import { Card, CardContent } from "@/components/ui/card";
 import StackIcon from "tech-stack-icons";
 import { Badge } from "@/components/ui/badge";
+import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 
 type Project = {
   project: {
@@ -23,12 +25,39 @@ const ProjectList: React.FC<Project> = (props) => {
   return (
     <>
       <div className="flex flex-col md:flex-row md:items-center md:gap-x-4 lg:gap-x-10">
-        <Card className="py-2">
-          <CardContent className="px-2">
-            <img className="rounded-md w-auto h-auto" src={img} alt={title} />
-          </CardContent>
-        </Card>
-        <div className="space-y-5 mt-4 bg-white rounded-2xl backdrop-blur-sm">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+          viewport={{ once: false, amount: 0.2 }}
+        >
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Card className="py-2 relative">
+              <CardContent className="w-full h-full px-2 relative">
+                {/* <h1 className="absolute font-bold text-lg text-white p-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem, voluptas?
+                </h1> */}
+                <img
+                  className=" rounded-md w-auto h-auto"
+                  src={img}
+                  alt={title}
+                />
+              </CardContent>
+            </Card>
+          </a>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.2 }}
+          className="space-y-5 mt-4 bg-white rounded-2xl backdrop-blur-sm"
+        >
           <div className="space-y-1">
             <h3 className="text-neutral-500 text-xs uppercase font-semibold">
               {type}
@@ -75,7 +104,7 @@ const ProjectList: React.FC<Project> = (props) => {
               </Button>
             )}
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

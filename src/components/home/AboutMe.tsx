@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import techstacks from "@/data/techstacks.json";
 import { Badge } from "@/components/ui/badge";
 import StackIcon from "tech-stack-icons";
 import experiences from "@/data/experiences.json";
 import ExperienceCard from "../ExperienceCard";
+import { useAnimation, motion } from "motion/react";
 
 const AboutMe: React.FC = () => {
+  const [hoveredIndex, setHoveredIndex] = useState<string | null>(null);
+
+  const handleHoverStart = (section: string, index: number) => {
+    setHoveredIndex(`${section}-${index}`);
+  };
+
+  const handleHoverEnd = () => {
+    setHoveredIndex(null);
+  };
+
   return (
     <>
       <div className="w-full h-full py-24">
@@ -33,10 +44,36 @@ const AboutMe: React.FC = () => {
               <h1 className="font-semibold text-md">Frontend Development</h1>
               <div className="flex items-center flex-wrap gap-4">
                 {techstacks.frontend_stacks.map((tech, index) => (
-                  <Badge key={index} variant="outline">
-                    <StackIcon className="w-4 h-4" name={tech.icon} />
-                    {tech.title}
-                  </Badge>
+                  <motion.div
+                    key={`frontend-${index}`}
+                    className="cursor-pointer"
+                    onHoverStart={() => handleHoverStart("frontend", index)}
+                    onHoverEnd={handleHoverEnd}
+                    whileHover={{ rotate: -6 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 15 }}
+                  >
+                    <Badge
+                      variant="outline"
+                      className="text-md p-2 flex items-center gap-x-2 transition-all duration-300 text-neutral-500
+                 hover:bg-gradient-to-r hover:from-[#803AEA] hover:to-violet-600 
+                 hover:text-transparent hover:bg-clip-text hover:font-medium"
+                    >
+                      <motion.div
+                        className="flex items-center justify-center"
+                        animate={{
+                          scale: hoveredIndex === `frontend-${index}` ? 1.3 : 1,
+                        }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 300,
+                          damping: 15,
+                        }}
+                      >
+                        <StackIcon className="w-5 h-5" name={tech.icon} />
+                      </motion.div>
+                      <h1 className="text-sm">{tech.title}</h1>
+                    </Badge>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -44,10 +81,36 @@ const AboutMe: React.FC = () => {
               <h1 className="font-semibold text-md">Backend Development</h1>
               <div className="flex items-center flex-wrap gap-4">
                 {techstacks.backend_stacks.map((tech, index) => (
-                  <Badge key={index} variant="outline">
-                    <StackIcon className="w-4 h-4" name={tech.icon} />
-                    {tech.title}
-                  </Badge>
+                  <motion.div
+                    key={`backend-${index}`}
+                    className="cursor-pointer"
+                    onHoverStart={() => handleHoverStart("backend", index)}
+                    onHoverEnd={handleHoverEnd}
+                    whileHover={{ rotate: -6 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 15 }}
+                  >
+                    <Badge
+                      variant="outline"
+                      className="text-md p-2 flex items-center gap-x-2 transition-all duration-300 text-neutral-500
+                 hover:bg-gradient-to-r hover:from-[#803AEA] hover:to-violet-600 
+                 hover:text-transparent hover:bg-clip-text hover:font-medium"
+                    >
+                      <motion.div
+                        className="flex items-center justify-center"
+                        animate={{
+                          scale: hoveredIndex === `backend-${index}` ? 1.3 : 1,
+                        }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 300,
+                          damping: 15,
+                        }}
+                      >
+                        <StackIcon className="w-5 h-5" name={tech.icon} />
+                      </motion.div>
+                      <h1 className="text-sm">{tech.title}</h1>
+                    </Badge>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -55,10 +118,36 @@ const AboutMe: React.FC = () => {
               <h1 className="font-semibold text-md">Tools & Others</h1>
               <div className="flex items-center flex-wrap gap-4">
                 {techstacks.tools.map((tech, index) => (
-                  <Badge key={index} variant="outline">
-                    <StackIcon className="w-4 h-4" name={tech.icon} />
-                    {tech.title}
-                  </Badge>
+                  <motion.div
+                    key={`tools-${index}`}
+                    className="cursor-pointer"
+                    onHoverStart={() => handleHoverStart("tools", index)}
+                    onHoverEnd={handleHoverEnd}
+                    whileHover={{ rotate: -6 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 15 }}
+                  >
+                    <Badge
+                      variant="outline"
+                      className="text-md p-2 flex items-center gap-x-2 transition-all duration-300 text-neutral-500
+                 hover:bg-gradient-to-r hover:from-[#803AEA] hover:to-violet-600 
+                 hover:text-transparent hover:bg-clip-text hover:font-medium"
+                    >
+                      <motion.div
+                        className="flex items-center justify-center"
+                        animate={{
+                          scale: hoveredIndex === `tools-${index}` ? 1.3 : 1,
+                        }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 300,
+                          damping: 15,
+                        }}
+                      >
+                        <StackIcon className="w-5 h-5" name={tech.icon} />
+                      </motion.div>
+                      <h1 className="text-sm">{tech.title}</h1>
+                    </Badge>
+                  </motion.div>
                 ))}
               </div>
             </div>
