@@ -3,8 +3,7 @@ import techstacks from "@/data/techstacks.json";
 import { Badge } from "@/components/ui/badge";
 import StackIcon from "tech-stack-icons";
 import experiences from "@/data/experiences.json";
-import { Card, CardContent } from "@/components/ui/card";
-import { Icon } from "@iconify/react/dist/iconify.js";
+import ExperienceCard from "../ExperienceCard";
 
 const AboutMe: React.FC = () => {
   return (
@@ -69,36 +68,7 @@ const AboutMe: React.FC = () => {
               <h1 className="font-bold text-2xl md:text-3xl">Experience</h1>
               <div>
                 {experiences.map((exp, index) => (
-                  <div className="space-y-4" key={index}>
-                    <div className="flex items-center gap-x-3">
-                      <Card className="w-12 p-2 rounded-sm">
-                        <CardContent className="p-0">
-                          <img className="w-32" src={exp.logo} alt={exp.name} />
-                        </CardContent>
-                      </Card>
-                      <div className="space-y-1">
-                        <h1 className="font-bold text-lg">{exp.position}</h1>
-                        <div className="flex items-center gap-x-3">
-                          <h3 className="text-neutral-500 text-xs">
-                            {exp.name}
-                          </h3>
-                          <Icon
-                            icon="tabler:circle-filled"
-                            className="text-neutral-400"
-                            fontSize={6}
-                          />
-                          <h3 className="text-neutral-500 text-xs">
-                            {exp.year}
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                    <ul className="list-disc space-y-4 text-neutral-500 text-sm/7 pt-5 ml-4">
-                      {exp.exp_list.map((list, index) => (
-                        <li key={index}>{list}</li>
-                      ))}
-                    </ul>
-                  </div>
+                  <ExperienceCard exp={exp} key={index} />
                 ))}
               </div>
             </div>
