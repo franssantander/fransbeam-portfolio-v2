@@ -28,9 +28,9 @@ const ProjectList: React.FC<Project> = (props) => {
             <img className="rounded-md w-auto h-auto" src={img} alt={title} />
           </CardContent>
         </Card>
-        <div className="space-y-6 mt-4 bg-white rounded-2xl backdrop-blur-sm">
+        <div className="space-y-5 mt-4 bg-white rounded-2xl backdrop-blur-sm">
           <div className="space-y-1">
-            <h3 className="text-neutral-500 text-sm uppercase font-semibold">
+            <h3 className="text-neutral-500 text-xs uppercase font-semibold">
               {type}
             </h3>
             <div className="flex items-center gap-x-2 relative">
@@ -41,10 +41,10 @@ const ProjectList: React.FC<Project> = (props) => {
               </Button>
             </div>
           </div>
-          <p className="text-sm/6 text-neutral-500">{desc}</p>
+          <p className="text-base/7 text-neutral-500">{desc}</p>
           {features.map((feature) => (
-            <ul className="hidden md:block space-y-3">
-              <li className="flex items-center gap-x-4">
+            <ul className="hidden md:block">
+              <li className="flex items-center gap-x-3">
                 <Icon color="#803AEA" icon="lucide:sparkle" fontSize={16} />
                 <p className="text-xs/5 text-neutral-500">{feature}</p>
               </li>

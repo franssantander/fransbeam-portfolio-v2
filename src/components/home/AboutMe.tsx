@@ -16,13 +16,13 @@ const AboutMe: React.FC = () => {
           >
             <div className="space-y-6">
               <h1 className="font-bold text-2xl md:text-3xl">About me</h1>
-              <p className="text-sm/6 text-neutral-500">
+              <p className="text-base/8 text-neutral-500">
                 Designing digital experiences that are intuitive, visually
                 stunning, and user-centered. From wireframes to interactive
                 prototypes, I focus on usability, accessibility, and seamless
                 interactions to elevate products that users love.
               </p>
-              <p className="text-sm/6 text-neutral-500">
+              <p className="text-base/8 text-neutral-500">
                 Designing digital experiences that are intuitive, visually
                 stunning, and user-centered. From wireframes to interactive
                 prototypes, I focus on usability, accessibility, and seamless
@@ -31,7 +31,7 @@ const AboutMe: React.FC = () => {
             </div>
             <div className="space-y-6">
               <h1 className="font-semibold text-md">Frontend Development</h1>
-              <div className="flex items-center space-y-3 flex-wrap gap-3">
+              <div className="flex items-center flex-wrap gap-4">
                 {techstacks.frontend_stacks.map((tech, index) => (
                   <Badge key={index} variant="outline">
                     <StackIcon className="w-4 h-4" name={tech.icon} />
@@ -42,7 +42,7 @@ const AboutMe: React.FC = () => {
             </div>
             <div className="space-y-6">
               <h1 className="font-semibold text-md">Backend Development</h1>
-              <div className="flex items-center space-y-3 flex-wrap gap-3">
+              <div className="flex items-center flex-wrap gap-4">
                 {techstacks.backend_stacks.map((tech, index) => (
                   <Badge key={index} variant="outline">
                     <StackIcon className="w-4 h-4" name={tech.icon} />
@@ -51,9 +51,9 @@ const AboutMe: React.FC = () => {
                 ))}
               </div>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-6">
               <h1 className="font-semibold text-md">Tools & Others</h1>
-              <div className="flex items-center space-y-3 flex-wrap gap-3">
+              <div className="flex items-center flex-wrap gap-4">
                 {techstacks.tools.map((tech, index) => (
                   <Badge key={index} variant="outline">
                     <StackIcon className="w-4 h-4" name={tech.icon} />

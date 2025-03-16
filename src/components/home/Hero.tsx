@@ -8,16 +8,14 @@ const Hero: React.FC = () => {
     <>
       <div className="w-full px-4 max-w-7xl m-auto h-dvh grid grid-cols items-center md:grid-cols-2">
         <div>
-          <div className="space-y-4 bg-white/80 backdrop-blur-none">
-            <div className="space-y-2">
-              <h3 className="uppercase text-neutral-500 text-xs font-semibold">
-                Full-Stack Software Engineer | UI/UX Designer
-              </h3>
-              <h1 className="font-bold text-2xl sm:text-5xl/14">
-                Building Digital Experiences with Code & Design
-              </h1>
-            </div>
-            <p className="text-neutral-500 text-sm/7 max-w-xl">
+          <div className="space-y-3 bg-white/80 backdrop-blur-none">
+            <h3 className="uppercase text-neutral-500 text-xs font-semibold">
+              Full-Stack Software Engineer | UI/UX Designer
+            </h3>
+            <h1 className="font-black text-2xl sm:text-5xl/14">
+              Building Digital Experiences with Code & Design
+            </h1>
+            <p className="text-neutral-500 text-base/8 max-w-xl">
               I craft seamless, high-performing web applications and intuitive
               user experiences. With a passion for both engineering and design,
               I bridge the gap between functionality and aesthetics to create

@@ -2,16 +2,14 @@ import React from "react";
 import { Separator } from "@/components/ui/separator";
 import experiences from "@/data/experiences.json";
 import ExperienceCard from "../ExperienceCard";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import techStacks from "@/data/techstacks.json";
-import StackIcon from "tech-stack-icons";
-import { Badge } from "@/components/ui/badge";
 import TechStacksCard from "../TechStacksCard";
+import wave from "@/assets/vector/wave.svg";
+import skills from "@/data/skills.json";
 
 const AboutMe: React.FC = () => {
   return (
     <>
-      <div className="w-full h-full">
+      <div className="w-full h-full pb-20">
         <div className="px-4 max-w-7xl m-auto py-36 md:py-0">
           <div className="w-full h-dvh flex flex-col justify-center items-center pt-20">
             <div className="w-full flex flex-col gap-y-7 text-center">
@@ -42,10 +40,10 @@ const AboutMe: React.FC = () => {
             </div>
           </div>
         </div>
-        <Separator className=" bg-neutral-400" />
         <div className="px-4 max-w-7xl m-auto">
           <div className="w-full h-full py-20 space-y-34">
             <div className="w-full flex flex-col text-center">
+              <img className="w-sm m-auto" src={wave} />
               <h1 className="font-bold text-2xl max-w-xl m-auto lg:text-3xl/12">
                 Experiences
               </h1>
@@ -57,18 +55,18 @@ const AboutMe: React.FC = () => {
             </div>
           </div>
         </div>
-        <Separator className=" bg-neutral-400" />
         <div className="px-4 max-w-7xl m-auto">
           <div className="w-full h-full py-20 space-y-34">
             <div className="w-full flex flex-col text-center">
+              <img className="w-sm m-auto" src={wave} />
               <h1 className="font-bold text-2xl max-w-xl m-auto lg:text-3xl/12">
-                Skills
+                My Tech Stack
               </h1>
             </div>
-            <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <TechStacksCard title="Frontend" stack="frontend_stacks" />
-              <TechStacksCard title="Backend" stack="backend_stacks" />
-              <TechStacksCard title="Tools & Others" stack="tools" />
+            <div className="flex flex-1 max-w-3xl m-auto flex-wrap justify-center gap-4">
+              {skills.map((skill, index) => (
+                <TechStacksCard skill={skill} key={index} />
+              ))}
             </div>
           </div>
         </div>

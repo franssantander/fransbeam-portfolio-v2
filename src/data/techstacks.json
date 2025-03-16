@@ -5,6 +5,10 @@
       "title": "React"
     },
     {
+      "icon": "js",
+      "title": "JavaScript"
+    },
+    {
       "icon": "typescript",
       "title": "TypeScript"
     },
@@ -41,11 +45,11 @@
       "title": "Shadcn UI"
     },
     {
-      "icon": null,
+      "icon": "",
       "title": "Mantine UI"
     },
     {
-      "icon": null,
+      "icon": "",
       "title": "Daisy UI"
     }
   ],
@@ -89,11 +93,11 @@
       "title": "Wordpress"
     },
     {
-      "icon": null,
+      "icon": "",
       "title": "Salesforce"
     },
     {
-      "icon": null,
+      "icon": "",
       "title": "Zuora"
     }
   ]

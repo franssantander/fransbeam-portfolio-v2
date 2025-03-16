@@ -28,7 +28,7 @@ const ExperienceCard: React.FC = (props) => {
             </div>
           </div>
         </div>
-        <ul className="list-disc space-y-4 text-neutral-500 text-sm/7 pt-5 ml-4">
+        <ul className="list-disc space-y-3 text-neutral-500 text-sm/7 pt-5 ml-4">
           {exp_list.map((list, index) => (
             <li key={index}>{list}</li>
           ))}
