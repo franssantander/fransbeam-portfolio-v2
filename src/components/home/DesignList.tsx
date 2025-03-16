@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const DesignList: React.FC = (props) => {
   const { design } = props;
-  const { img, title, link } = design;
+  const { id, img, title } = design;
   return (
-    <Link to={link}>
+    <Link state={design} to={`/design/${id}`}>
       <Card className="py-2">
         <CardContent className="px-2">
           <img

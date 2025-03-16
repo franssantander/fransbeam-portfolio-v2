@@ -1,25 +1,66 @@
 [
   {
+    "id": 1,
     "img": "hyperview.jpg",
-    "title": "Hyper View",
+    "title": "HyperView Music Studio",
+    "description": "UI/UX Design, Landing Page",
+    "year": "2023",
+    "overview_cover": "hyperview-cover.jpg",
+    "overview": "The goal of this design project is to create a visually captivating and user-friendly website for Hyperview Music Studio Record. The website will serve as a digital platform for musicians and bands to explore and engage with the studio's services, including music recording, mixing, and mastering.",
+    "color_palette": "hyperview-colorpalette.jpg",
+    "typography": "hyperview-fonts.jpg",
+    "wireframe": "hyperview-wireframe.png",
+    "project_outcome": [
+      "hyperview-outcome1.jpg",
+      "hyperview-outcome2.jpg",
+      "hyperview-outcome3.png"
+    ],
     "link": "/"
   },
   {
+    "id": 2,
     "img": "moh.jpg",
     "title": "Medal of Honor (Case Study)",
+    "description": "UI/UX Design, Landing Page, Gaming Website",
+    "year": "2023",
+    "overview_cover": "moh-cover.jpg",
+    "overview": "The objective of this design project is to create an immersive and visually captivating website for the Medal of Honor gaming first-person shooter (FPS) franchise. The website will serve as a central hub for fans and players to engage with the game, explore its features, and connect with the community.",
+    "color_palette": "moh-colorpalette.jpg",
+    "typography": "moh-typography.jpg",
+    "wireframe": "moh-wireframe.png",
+    "project_outcome": [
+      "moh-outcome1.jpg",
+      "moh-outcome2.jpg",
+      "moh-outcome3.png"
+    ],
     "link": "/"
   },
   {
+    "id": 3,
     "img": "transitease.jpg",
-    "title": "Transit Ease",
+    "title": "Transit Ease Bus App",
+    "description": "UI/UX Design, Mobile App",
+    "year": "2023",
+    "overview_cover": "transitease-cover.jpg",
+    "overview": "The goal of this design project is to create a user-friendly and intuitive mobile app for TransitEase, a comprehensive and efficient bus transportation service. The TransitEase Bus App will provide users with a seamless and convenient way to navigate bus routes, access real-time bus arrival information, plan their journeys, and stay informed about service updates",
+    "color_palette": "transitease-colorpalette.jpg",
+    "typography": "transitease-typography.jpg",
+    "wireframe": "transitease-sitemap.jpg",
+    "project_outcome": [
+      "transitease-outcome1.jpg",
+      "transitease-outcome2.jpg",
+      "transitease-outcome3.png"
+    ],
     "link": "/"
   },
   {
+    "id": 4,
     "img": "basicclothinguiux.jpg",
     "title": "Base Clothing",
     "link": "/"
   },
   {
+    "id": 5,
     "img": "foodapp.jpg",
     "title": "Food App and Meal Dating",
     "link": "/"

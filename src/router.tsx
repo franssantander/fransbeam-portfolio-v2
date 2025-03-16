@@ -4,6 +4,7 @@ import Home from "@/pages/Home";
 import Projects from "@/components/projects/Projects";
 import Designs from "@/components/designs/Designs";
 import AboutMe from "@/components/aboutme/AboutMe";
+import DesignView from "./components/designs/DesignView";
 
 const Routes = () => {
   const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const Routes = () => {
         {
           path: "/designs",
           element: <Designs />,
+        },
+        {
+          path: "/design/:title",
+          element: <DesignView />,
         },
         {
           path: "/about-me",
