@@ -25,7 +25,7 @@ const Routes = () => {
           element: <Designs />,
         },
         {
-          path: "/design/:title",
+          path: "/designs/:title",
           element: <DesignView />,
         },
         {

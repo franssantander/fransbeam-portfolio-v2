@@ -4,6 +4,7 @@ import DesignList from "../home/DesignList";
 import designs from "@/data/designs.json";
 import { motion } from "motion/react";
 
+
 const Designs: React.FC = () => {
   return (
     <>

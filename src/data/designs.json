@@ -57,12 +57,36 @@
     "id": 4,
     "img": "basicclothinguiux.jpg",
     "title": "Base Clothing",
+    "description": "UI/UX Design, Clothing, E-Commerce",
+    "year": "2023",
+    "overview_cover": "basicclothing.jpg",
+    "overview": "The objective of this design project is to create a visually appealing and user-friendly e-commerce website for BASIC Clothing, a fashion brand that offers a wide range of stylish and high-quality clothing for men and women. The BASIC Clothing website will serve as an online platform for customers to browse and purchase clothing items conveniently.",
+    "color_palette": "basicclothing-colorpalette.jpg",
+    "typography": "basicclothing-typography.jpg",
+    "wireframe": "basicclothing-wireframe.png",
+    "project_outcome": [
+      "basicclothing-outcome1.jpg",
+      "basicclothing-outcome2.jpg",
+      "basicclothing-outcome3.png"
+    ],
     "link": "/"
   },
   {
     "id": 5,
     "img": "foodapp.jpg",
     "title": "Food App and Meal Dating",
+    "description": "UI/UX Design, Mobile App",
+    "year": "2023",
+    "overview_cover": "foodapp-cover.jpg",
+    "overview": "The goal of this design project is to create a unique and user-friendly mobile app that combines the convenience of food delivery services with the excitement of meeting new people through a dating platform. This innovative app aims to provide users with a seamless and enjoyable experience, allowing them to discover local restaurants, order food, and connect with potential romantic interests.",
+    "color_palette": "foodapp-colorpalette.jpg",
+    "typography": "foodapp-typography.jpg",
+    "wireframe": "foodapp-sitemap.jpg",
+    "project_outcome": [
+      "foodapp-outcome1.jpg",
+      "foodapp-outcome2.jpg",
+      "foodapp-outcome3.png"
+    ],
     "link": "/"
   }
 ]

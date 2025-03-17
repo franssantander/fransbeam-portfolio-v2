@@ -5,7 +5,7 @@
     "type": "Fullstack Web App",
     "desc": "Lorem ipsum dolor sit amet consectetur. Sociis auctor massa quam laoreet cursus pulvinar pulvinar ultrices. Arcu bibendum eget et parturient aliquam magna porttitor sit malesuada.",
     "github": "/",
-    "live_demo": "/",
+    "live_demo": "",
     "techstacks": [
       {
         "title": "React",
@@ -41,7 +41,7 @@
     "type": "Fullstack Web App",
     "desc": "Lorem ipsum dolor sit amet consectetur. Sociis auctor massa quam laoreet cursus pulvinar pulvinar ultrices. Arcu bibendum eget et parturient aliquam magna porttitor sit malesuada.",
     "github": "/",
-    "live_demo": "/",
+    "live_demo": "",
 
     "techstacks": [
       {
@@ -145,7 +145,7 @@
     ]
   },
   {
-    "img": "drumpad.jpg",
+    "img": "drumpadapp.jpg",
     "title": "Drumpad App",
     "type": "Frontend",
     "desc": "Lorem ipsum dolor sit amet consectetur. Sociis auctor massa quam laoreet cursus pulvinar pulvinar ultrices. Arcu bibendum eget et parturient aliquam magna porttitor sit malesuada.",

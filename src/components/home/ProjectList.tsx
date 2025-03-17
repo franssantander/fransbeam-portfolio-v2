@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { Card, CardContent } from "@/components/ui/card";
+import { CardHeader, CardTitle, Card, CardContent } from "@/components/ui/card";
 import StackIcon from "tech-stack-icons";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "motion/react";
@@ -31,17 +31,32 @@ const ProjectList: React.FC<Project> = (props) => {
           viewport={{ once: false, amount: 0.2 }}
         >
           <a href={live_demo} target="_blank" rel="noopener noreferrer">
-            <Card className="py-2 relative">
+            <Card className="py-2">
+              {live_demo === "" && (
+                <CardHeader className="px-4 h-4 pt-2">
+                  <CardTitle>
+                    <div className="flex items-end flex-col">
+                      <Badge
+                        variant="secondary"
+                        className="p-1 flex items-center gap-x-2"
+                      >
+                        <span className="flex h-2 w-2 rounded-full bg-yellow-400"></span>
+                        Coming Soon
+                      </Badge>
+                    </div>
+                  </CardTitle>
+                </CardHeader>
+              )}
               <CardContent className="w-full h-full px-2 relative">
-                {/* <h1 className="absolute font-bold text-lg text-white p-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quidem, voluptas?
-                </h1> */}
-                <img
-                  className="rounded-md max-w-2xl h-auto object-cover"
-                  src={`../../../public/thumbnail/${img}`}
-                  alt={title}
-                />
+                <div className="rounded-md overflow-hidden">
+                  <motion.img
+                    className="rounded-md max-w-2xl h-auto object-cover"
+                    src={`../../../public/thumbnail/${img}`}
+                    alt={title}
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.4, ease: "easeOut" }}
+                  />
+                </div>
               </CardContent>
             </Card>
           </a>

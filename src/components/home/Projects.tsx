@@ -27,9 +27,6 @@ const Projects: React.FC = () => {
                 <ProjectList project={project} key={index} />
               ))}
             </div>
-            <div className="w-full flex justify-center">
-              <Button>View more projects</Button>
-            </div>
           </div>
         </div>
       </div>

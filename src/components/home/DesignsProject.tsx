@@ -44,9 +44,6 @@ const DesignsProject: React.FC = () => {
                 </motion.div>
               ))}
             </motion.div>
-            <div className="w-full flex justify-center">
-              <Button>View more designs</Button>
-            </div>
           </div>
         </div>
       </div>

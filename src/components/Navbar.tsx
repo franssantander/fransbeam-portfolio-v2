@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
-import { DarkModeToggle } from "@/components/DarkModeToggle";
+// import { DarkModeToggle } from "@/components/DarkModeToggle";
 import navMenu from "@/data/navbar.json";
 import {
   Drawer,
@@ -12,9 +12,11 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import _ from "lodash";
 
 const Navbar: React.FC = () => {
   const location = useLocation();
+
   return (
     <>
       <div className="hidden max-w-7xl mx-auto items-center justify-between p-4 lg:flex">
@@ -23,19 +25,22 @@ const Navbar: React.FC = () => {
             Fransbeam
           </Link>
           <ul className="flex items-center gap-x-7 text-sm text-neutral-500">
-            {navMenu.map((menu, index) => (
-              <Link
-                className={
-                  location.pathname === menu.link
-                    ? "font-medium text-black"
-                    : ""
-                }
-                key={index}
-                to={menu.link}
-              >
-                {menu.menu}
-              </Link>
-            ))}
+            {navMenu.map((menu, index) => {
+              const isActive =
+                location.pathname === menu.link ||
+                (menu.link.includes("designs") &&
+                  _.includes(location.pathname, "designs/"));
+
+              return (
+                <Link
+                  className={isActive ? "font-medium text-black" : ""}
+                  key={index}
+                  to={menu.link}
+                >
+                  {menu.menu}
+                </Link>
+              );
+            })}
           </ul>
         </div>
         <div className="space-x-3 flex items-center">
