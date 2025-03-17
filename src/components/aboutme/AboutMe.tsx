@@ -16,7 +16,7 @@ const AboutMe: React.FC = () => {
             <div className="w-full flex flex-col gap-y-7 text-center">
               <h1 className="bg-white rounded-full font-bold text-2xl max-w-xl m-auto flex lg:text-3xl/12">
                 <span>
-                  <img draggable="false" className="w-17" src={wavingHand} />
+                  <img draggable="false" className="w-14" src={wavingHand} />
                 </span>
                 Hi, I’m Francis Beam - A Fullstack Developer & UI/UX Designer
               </h1>

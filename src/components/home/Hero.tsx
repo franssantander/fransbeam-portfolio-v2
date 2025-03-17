@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import Me from "@/assets/me.png";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
   return (
@@ -66,12 +67,22 @@ const Hero: React.FC = () => {
                     damping: 15,
                   }}
                 >
-                  {index === 2 ? (
-                    <Button variant="ghost">{item}</Button>
+                  {index === 0 ? (
+                    <Link to="/projects">
+                      <Button variant="default">{item}</Button>
+                    </Link>
+                  ) : index === 1 ? (
+                    <a href="mailto:santanderfrancisbeam@gmail.com">
+                      <Button variant="outline">{item}</Button>
+                    </a>
                   ) : (
-                    <Button variant={index === 1 ? "outline" : "default"}>
-                      {item}
-                    </Button>
+                    <a
+                      href="https://github.com/franssantander"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button variant="ghost">{item}</Button>
+                    </a>
                   )}
                 </motion.div>
               ))}

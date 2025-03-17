@@ -10,9 +10,8 @@ const Footer: React.FC = () => {
   const year = date.getFullYear();
 
   const socialLinks = [
-    { icon: "lucide:github", url: "https://github.com" },
-    { icon: "lucide:linkedin", url: "https://linkedin.com" },
-    { icon: "lucide:facebook", url: "https://facebook.com" },
+    { icon: "lucide:github", url: "https://github.com/franssantander" },
+    { icon: "lucide:linkedin", url: "https://www.linkedin.com/in/francebeam/" },
   ];
 
   return (
@@ -51,7 +50,9 @@ const Footer: React.FC = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
-              <Button size="lg">Email me</Button>
+              <a href="mailto:santanderfrancisbeam@gmail.com">
+                <Button size="lg">Email me</Button>
+              </a>
             </motion.div>
           </div>
           <div className="flex flex-col gap-y-10 items-center justify-between sm:flex-row">

@@ -28,16 +28,15 @@ const AboutMe: React.FC = () => {
             <div className="space-y-6">
               <h1 className="font-bold text-2xl md:text-3xl">About me</h1>
               <p className="text-base/8 text-neutral-500">
-                Designing digital experiences that are intuitive, visually
-                stunning, and user-centered. From wireframes to interactive
-                prototypes, I focus on usability, accessibility, and seamless
-                interactions to elevate products that users love.
+                Hi there! I'm Francis, a full-stack software engineer and UI/UX
+                designer with over five years of experience. I am passionate
+                about both coding and design, continuously learning and refining
+                my skills. I focus on seamlessly integrating these two
+                disciplines into all my projects and my current work.
               </p>
               <p className="text-base/8 text-neutral-500">
-                Designing digital experiences that are intuitive, visually
-                stunning, and user-centered. From wireframes to interactive
-                prototypes, I focus on usability, accessibility, and seamless
-                interactions to elevate products that users love.
+                In my free time, I enjoy reading books, playing the guitar,
+                playing some online games, and taking long walks at night.
               </p>
             </div>
             <div className="space-y-6">
