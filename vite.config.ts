@@ -20,7 +20,7 @@ export default defineConfig({
       },
     }),
   ],
-  base: process.env.VITE_BASE_URL || "/fransbeam-portfolio",
+  base: process.env.VITE_BASE_URL || "/fransbeam-portfolio-v2",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
