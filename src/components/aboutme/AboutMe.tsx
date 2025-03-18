@@ -11,14 +11,14 @@ const AboutMe: React.FC = () => {
   return (
     <>
       <div className="w-full h-full pb-20">
-        <div className="px-4 max-w-7xl m-auto py-36 md:py-0">
-          <div className="w-full h-dvh flex flex-col justify-center items-center pt-20">
+        <div className="px-4 max-w-7xl m-auto py-30 md:py-0">
+          <div className="w-full h-full lg:h-screen flex flex-col justify-center items-center pt-20">
             <div className="w-full flex flex-col gap-y-7 text-center">
               <h1 className="bg-white rounded-full font-bold text-2xl max-w-xl m-auto flex lg:text-3xl/12">
                 <span>
                   <img draggable="false" className="w-14" src={wavingHand} />
                 </span>
-                Hi, I’m Francis Beam - A Fullstack Developer & UI/UX Designer
+                Hi, I’m Francis Beam - A Fullstack Software Engineer & UI/UX Designer
               </h1>
               <p className="bg-white rounded-full text-neutral-500 max-w-sm m-auto">
                 Building Seamless Digital Experiences with Code & Design since

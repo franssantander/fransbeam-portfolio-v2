@@ -52,7 +52,9 @@ const Navbar: React.FC = () => {
       </div>
       <div className="w-full fixed border-b left-0 bg-white flex items-center justify-between p-4 lg:hidden">
         <div>
-          <h1 className="font-bold text-lg">Fransbeam</h1>
+          <Link to="/" className="font-bold text-2xl">
+            Fransbeam
+          </Link>
         </div>
         <Drawer direction="right">
           <DrawerTrigger>

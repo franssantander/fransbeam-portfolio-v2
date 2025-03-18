@@ -4,9 +4,9 @@ import { ThemeProvider } from "./components/ThemeProvider";
 function App() {
   return (
     <>
-      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      {/* <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme"> */}
         <Routes />
-      </ThemeProvider>
+      {/* </ThemeProvider> */}
     </>
   );
 }

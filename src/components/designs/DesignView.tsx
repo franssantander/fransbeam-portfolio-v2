@@ -22,7 +22,7 @@ const DesignView: React.FC = () => {
 
   return (
     <>
-      <div className="w-full h-full max-w-7xl mx-auto px-4 py-32">
+      <div className="w-full h-full max-w-7xl mx-auto px-4 py-24 md:py-32">
         <Button className="w-14" variant="link">
           <Link
             className="flex items-center justify-between gap-x-2 text-neutral-600 w-14 group"
@@ -50,7 +50,7 @@ const DesignView: React.FC = () => {
             <h3>{year}</h3>
           </div>
           <div className="py-20">
-            <div className="space-y-20">
+            <div className="flex flex-col gap-y-30">
               <div className="space-y-10">
                 <img src={`${filepath}${overview_cover}`} alt={title} />
                 <div className="space-y-6">
@@ -58,7 +58,7 @@ const DesignView: React.FC = () => {
                   <p className="text-neutral-500 max-w-2xl">{overview}</p>
                 </div>
               </div>
-              <div className="md:flex md:gap-x-14">
+              <div className="md:flex space-y-30 sm:space-y-10 md:gap-x-14">
                 <div className="space-y-6">
                   <h1 className="font-bold text-2xl md:text-3xl">
                     Color Palette
@@ -68,7 +68,7 @@ const DesignView: React.FC = () => {
 
                 <div className="space-y-6">
                   <h1 className="font-bold text-2xl md:text-3xl">
-                    Color Palette
+                    Typography
                   </h1>
                   <img src={`${filepath}${typography}`} alt={title} />
                 </div>
