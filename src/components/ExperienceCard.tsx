@@ -22,7 +22,7 @@ const ExperienceCard: React.FC<ExperienceType> = (props) => {
         <div className="flex items-center gap-x-3">
           <Card className="w-12 p-2 rounded-sm">
             <CardContent className="p-0">
-              <img className="w-32" src={logo} alt={name} />
+              <img className="w-32" src={`/companylogo/${logo}`} alt={name} />
             </CardContent>
           </Card>
           <div className="space-y-1 bg-white rounded-full">
