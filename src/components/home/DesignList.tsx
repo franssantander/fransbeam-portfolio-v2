@@ -3,7 +3,24 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 
-const DesignList: React.FC = (props) => {
+interface DesignListType {
+  design: {
+    id: number;
+    img: string;
+    title: string;
+    description: string;
+    year: string;
+    overview_cover: string;
+    overview: string;
+    color_palette: string;
+    typography: string;
+    wireframe: string;
+    project_outcome: string[];
+    link: string;
+  };
+}
+
+const DesignList: React.FC<DesignListType> = (props) => {
   const { design } = props;
   const { id, img, title } = design;
   return (

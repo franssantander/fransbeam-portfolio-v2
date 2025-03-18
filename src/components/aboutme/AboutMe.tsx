@@ -1,5 +1,4 @@
 import React from "react";
-import { Separator } from "@/components/ui/separator";
 import experiences from "@/data/experiences.json";
 import ExperienceCard from "../ExperienceCard";
 import TechStacksCard from "../TechStacksCard";

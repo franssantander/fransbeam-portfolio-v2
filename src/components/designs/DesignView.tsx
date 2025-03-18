@@ -67,9 +67,7 @@ const DesignView: React.FC = () => {
                 </div>
 
                 <div className="space-y-6">
-                  <h1 className="font-bold text-2xl md:text-3xl">
-                    Typography
-                  </h1>
+                  <h1 className="font-bold text-2xl md:text-3xl">Typography</h1>
                   <img src={`${filepath}${typography}`} alt={title} />
                 </div>
               </div>
@@ -86,7 +84,7 @@ const DesignView: React.FC = () => {
                   Project Outcome
                 </h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:mx-auto">
-                  {project_outcome.map((data, index: number) => (
+                  {project_outcome.map((data: { data: [] }, index: number) => (
                     <img
                       src={`${filepath}${data}`}
                       key={index}

@@ -1,5 +1,5 @@
 import Routes from "@/router";
-import { ThemeProvider } from "./components/ThemeProvider";
+// import { ThemeProvider } from "./components/ThemeProvider";
 
 function App() {
   return (

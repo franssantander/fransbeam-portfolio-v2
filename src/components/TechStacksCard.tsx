@@ -8,16 +8,17 @@ interface TechStacksCardProps {
     title: string;
     icon: string;
   };
+  index: number;
 }
 
 const TechStacksCard: React.FC<TechStacksCardProps> = (props) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-  const { skill, key } = props;
+  const { skill, index } = props;
   const { title, icon } = skill;
   return (
     <motion.div
-      onHoverStart={() => setHoveredIndex(key)}
+      onHoverStart={() => setHoveredIndex(index)}
       onHoverEnd={() => setHoveredIndex(null)}
       whileHover={{ rotate: -6 }}
       transition={{ type: "spring", stiffness: 300, damping: 15 }}
@@ -26,7 +27,7 @@ const TechStacksCard: React.FC<TechStacksCardProps> = (props) => {
         <motion.div
           className="flex items-center gap-x-1 px-2 py-1 justify-center hover:bg-gradient-to-r hover:from-[#803AEA] hover:to-violet-600 
                  hover:text-transparent hover:bg-clip-text hover:font-medium"
-          animate={{ scale: hoveredIndex === key ? 1.2 : 1 }}
+          animate={{ scale: hoveredIndex === index ? 1.2 : 1 }}
           transition={{
             type: "spring",
             stiffness: 300,

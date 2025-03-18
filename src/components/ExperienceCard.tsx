@@ -2,7 +2,17 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
-const ExperienceCard: React.FC = (props) => {
+interface ExperienceType {
+  exp: {
+    logo: string;
+    position: string;
+    name: string;
+    year: string;
+    exp_list: string[];
+  };
+}
+
+const ExperienceCard: React.FC<ExperienceType> = (props) => {
   const { exp } = props;
   const { logo, position, name, year, exp_list } = exp;
 
@@ -30,7 +40,9 @@ const ExperienceCard: React.FC = (props) => {
         </div>
         <ul className="list-disc space-y-3 text-neutral-500 text-sm/7 pt-5 ml-4">
           {exp_list.map((list, index) => (
-            <li className="bg-white" key={index}>{list}</li>
+            <li className="bg-white" key={index}>
+              {list}
+            </li>
           ))}
         </ul>
       </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import projects from "@/data/projects.json";
 import ProjectList from "./ProjectList";
-import { Button } from "../ui/button";
 
 const Projects: React.FC = () => {
   return (

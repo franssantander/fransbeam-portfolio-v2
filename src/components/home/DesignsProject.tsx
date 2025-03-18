@@ -1,6 +1,5 @@
 import React from "react";
 import designs from "@/data/designs.json";
-import { Button } from "@/components/ui/button";
 import DesignList from "./DesignList";
 import { motion } from "motion/react";
 

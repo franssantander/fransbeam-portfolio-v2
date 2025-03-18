@@ -6,7 +6,7 @@ import StackIcon from "tech-stack-icons";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "motion/react";
 
-type Project = {
+interface Project {
   project: {
     img: string;
     title: string;
@@ -15,9 +15,12 @@ type Project = {
     desc: string;
     features: string[];
     live_demo: string;
-    techstacks: string[];
+    techstacks: {
+      icon: string | null;
+      title: string;
+    }[];
   };
-};
+}
 
 const ProjectList: React.FC<Project> = (props) => {
   const { project } = props;
@@ -97,12 +100,17 @@ const ProjectList: React.FC<Project> = (props) => {
                 </ul>
               ))}
               <div className="flex flex-wrap items-center gap-3">
-                {techstacks.map((tech, index: number) => (
-                  <Badge variant="outline" key={index}>
-                    <StackIcon className="w-4 h-4" name={tech.icon} />
-                    {tech.title}
-                  </Badge>
-                ))}
+                {techstacks.map(
+                  (
+                    tech: { icon: string | null; title: string },
+                    index: number
+                  ) => (
+                    <Badge variant="outline" key={index}>
+                      <StackIcon className="w-4 h-4" name={tech.icon} />
+                      {tech.title}
+                    </Badge>
+                  )
+                )}
               </div>
               <div className="mt-6 flex items-center gap-x-3 md:hidden">
                 <a href={github} target="_blank" rel="noopener noreferrer">
