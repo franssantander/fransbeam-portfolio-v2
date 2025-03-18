@@ -30,7 +30,7 @@ const DesignList: React.FC<DesignListType> = (props) => {
           <div className="rounded-md overflow-hidden">
             <motion.img
               className="rounded-md w-auto h-auto"
-              src={`../../../public/thumbnail/${img}`}
+              src={`/thumbnail/${img}`}
               alt={title}
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.4, ease: "easeOut" }}

@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
           </ul>
         </div>
         <div className="space-x-3 flex items-center">
-          <a href="/public/Francis Beam Santander - Resume.pdf" download>
+          <a href="/Francis Beam Santander - Resume.pdf" download>
             <Button>Resume</Button>
           </a>
           {/* <DarkModeToggle /> */}

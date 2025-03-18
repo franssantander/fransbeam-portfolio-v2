@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 const DesignView: React.FC = () => {
   const location = useLocation();
   const viewData = location.state;
-  const filepath = "../../../public/thumbnail/";
+  const filepath = "/thumbnail/";
   const {
     title,
     description,

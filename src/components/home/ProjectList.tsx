@@ -57,7 +57,7 @@ const ProjectList: React.FC<Project> = (props) => {
                 <div className="rounded-md overflow-hidden">
                   <motion.img
                     className="rounded-md max-w md:max-w-2xl h-auto object-cover"
-                    src={`../../../public/thumbnail/${img}`}
+                    src={`/thumbnail/${img}`}
                     alt={title}
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.4, ease: "easeOut" }}

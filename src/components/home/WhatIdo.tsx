@@ -39,7 +39,7 @@ const WhatIdo: React.FC = () => {
                 className="space-y-3"
               >
                 <img
-                  src={`../../../public/icons/${data.icon}`}
+                  src={`/icons/${data.icon}`}
                   alt="System Design"
                 />
                 <div className="space-y-3">
