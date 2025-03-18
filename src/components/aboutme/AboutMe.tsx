@@ -17,7 +17,8 @@ const AboutMe: React.FC = () => {
                 <span>
                   <img draggable="false" className="w-14" src={wavingHand} />
                 </span>
-                Hi, I’m Francis Beam - A Fullstack Software Engineer & UI/UX Designer
+                Hi, I’m Francis Beam - A Fullstack Software Engineer & UI/UX
+                Designer
               </h1>
               <p className="bg-white rounded-full text-neutral-500 max-w-sm m-auto">
                 Building Seamless Digital Experiences with Code & Design since
@@ -68,7 +69,7 @@ const AboutMe: React.FC = () => {
             </div>
             <div className="bg-white rounded-full flex flex-1 max-w-3xl m-auto flex-wrap justify-center gap-4">
               {skills.map((skill, index) => (
-                <TechStacksCard skill={skill} key={index} />
+                <TechStacksCard skill={skill} index={index} key={index} />
               ))}
             </div>
           </div>
