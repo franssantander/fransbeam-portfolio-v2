@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { CardHeader, CardTitle, Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import StackIcon from "tech-stack-icons";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "motion/react";
@@ -38,21 +38,6 @@ const ProjectList: React.FC<Project> = (props) => {
         >
           <a href={live_demo} target="_blank" rel="noopener noreferrer">
             <Card className="py-2">
-              {/* {live_demo === "" && (
-                <CardHeader className="px-4 h-4 pt-2">
-                  <CardTitle>
-                    <div className="flex items-end flex-col">
-                      <Badge
-                        variant="secondary"
-                        className="p-1 flex items-center gap-x-2"
-                      >
-                        <span className="flex h-2 w-2 rounded-full bg-yellow-400 animate-pulse shadow-[0_0_8px_2px] shadow-yellow-300"></span>
-                        Coming Soon
-                      </Badge>
-                    </div>
-                  </CardTitle>
-                </CardHeader>
-              )} */}
               <CardContent className="w-full h-full px-2 relative">
                 {live_demo === "" && (
                   <div className="flex items-end justify-end right-4 top-2 flex-col absolute z-1">
