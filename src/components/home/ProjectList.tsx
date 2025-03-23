@@ -38,7 +38,7 @@ const ProjectList: React.FC<Project> = (props) => {
         >
           <a href={live_demo} target="_blank" rel="noopener noreferrer">
             <Card className="py-2">
-              {live_demo === "" && (
+              {/* {live_demo === "" && (
                 <CardHeader className="px-4 h-4 pt-2">
                   <CardTitle>
                     <div className="flex items-end flex-col">
@@ -52,8 +52,19 @@ const ProjectList: React.FC<Project> = (props) => {
                     </div>
                   </CardTitle>
                 </CardHeader>
-              )}
+              )} */}
               <CardContent className="w-full h-full px-2 relative">
+                {live_demo === "" && (
+                  <div className="flex items-end justify-end right-4 top-2 flex-col absolute z-1">
+                    <Badge
+                      variant="secondary"
+                      className="p-1 flex items-center gap-x-2"
+                    >
+                      <span className="flex h-2 w-2 rounded-full bg-yellow-400 animate-pulse shadow-[0_0_8px_2px] shadow-yellow-300"></span>
+                      Coming Soon
+                    </Badge>
+                  </div>
+                )}
                 <div className="rounded-md overflow-hidden">
                   <motion.img
                     className="rounded-md max-w md:max-w-2xl h-auto object-cover"
@@ -90,12 +101,16 @@ const ProjectList: React.FC<Project> = (props) => {
                   </a>
                 </div>
               </div>
-              <p className="text-base/7 text-neutral-500 dark:text-[#B3B8C4]">{desc}</p>
+              <p className="text-base/7 text-neutral-500 dark:text-[#B3B8C4]">
+                {desc}
+              </p>
               {features.map((feature) => (
                 <ul className="hidden md:block">
                   <li className="flex items-center gap-x-3">
                     <Icon color="#803AEA" icon="lucide:sparkle" fontSize={16} />
-                    <p className="text-xs/5 text-neutral-500 dark:text-[#B3B8C4]">{feature}</p>
+                    <p className="text-xs/5 text-neutral-500 dark:text-[#B3B8C4]">
+                      {feature}
+                    </p>
                   </li>
                 </ul>
               ))}
