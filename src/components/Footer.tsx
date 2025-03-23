@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <footer className="w-full h-full relative bg-[#7241FF] py-24">
+      <footer className="w-full h-full relative bg-[#7241FF] py-24 rounded-t-[4rem]">
         <div className="relative px-4 space-y-32 max-w-7xl m-auto z-10">
           <div className="text-center flex flex-col gap-y-7 z-50">
             <div className="w-full m-auto flex justify-center space-x-4">

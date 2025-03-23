@@ -13,7 +13,7 @@ const HomeLayout: React.FC = () => {
   return (
     <>
       <div className="border-b">
-        <div className="w-full fixed top-0 left-0 right-0 z-10 bg-white/80 backdrop-blur-md border-b border-gray-200">
+        <div className="w-full fixed top-0 left-0 right-0 z-10 dark:bg-[#161F33]/80 bg-white/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
           <Navbar />
         </div>
       </div>

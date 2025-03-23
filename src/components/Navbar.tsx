@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
-// import { DarkModeToggle } from "@/components/DarkModeToggle";
+import { DarkModeToggle } from "@/components/DarkModeToggle";
 import navMenu from "@/data/navbar.json";
 import {
   Drawer,
@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
     <>
       <div className="hidden max-w-7xl mx-auto items-center justify-between p-4 lg:flex">
         <div className="flex items-center gap-x-7">
-          <Link to="/" className="font-bold text-xl">
+          <Link to="/" className="font-black text-xl">
             Fransbeam
           </Link>
           <ul className="flex items-center gap-x-7 text-sm text-neutral-500">
@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
 
               return (
                 <Link
-                  className={isActive ? "font-medium text-black" : ""}
+                  className={isActive ? "font-medium text-black dark:text-white" : "dark:text-[#B3B8C4]"}
                   key={index}
                   to={menu.link}
                 >
@@ -47,10 +47,10 @@ const Navbar: React.FC = () => {
           <a href="/Francis Beam Santander - Resume.pdf" download>
             <Button>Resume</Button>
           </a>
-          {/* <DarkModeToggle /> */}
+          <DarkModeToggle />
         </div>
       </div>
-      <div className="w-full fixed border-b left-0 bg-white flex items-center justify-between p-4 lg:hidden">
+      <div className="w-full fixed border-b left-0 bg-white dark:dark:bg-[#161F33] flex items-center justify-between p-4 lg:hidden">
         <div>
           <Link to="/" className="font-bold text-2xl">
             Fransbeam

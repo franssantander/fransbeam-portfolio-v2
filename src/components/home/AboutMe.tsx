@@ -23,18 +23,18 @@ const AboutMe: React.FC = () => {
         <div className="grid grid-cols px-4 gap-y-24 max-w-7xl m-auto md:gap-x-32 md:grid-cols-2">
           <div
             id="about-me"
-            className="space-y-10 bg-white/50 backdrop-blur-sm"
+            className="space-y-10 bg-white/50 dark:bg-[#161F33] backdrop-blur-sm"
           >
             <div className="space-y-6">
               <h1 className="font-bold text-2xl md:text-3xl">About me</h1>
-              <p className="text-base/8 text-neutral-500">
+              <p className="text-base/8 text-neutral-500 dark:text-[#B3B8C4]">
                 Hi there! I'm Francis, a full-stack software engineer and UI/UX
                 designer with over five years of experience. I am passionate
                 about both coding and design, continuously learning and refining
                 my skills. I focus on seamlessly integrating these two
                 disciplines into all my projects and my current work.
               </p>
-              <p className="text-base/8 text-neutral-500">
+              <p className="text-base/8 text-neutral-500 dark:text-[#B3B8C4]">
                 In my free time, I enjoy reading books, playing the guitar,
                 playing some online games, and taking long walks at night.
               </p>
@@ -69,7 +69,7 @@ const AboutMe: React.FC = () => {
                       >
                         <StackIcon className="w-5 h-5" name={tech.icon} />
                       </motion.div>
-                      <h1 className="text-sm">{tech.title}</h1>
+                      <h1 className="text-sm dark:text-[#B3B8C4]">{tech.title}</h1>
                     </Badge>
                   </motion.div>
                 ))}
@@ -105,7 +105,7 @@ const AboutMe: React.FC = () => {
                       >
                         <StackIcon className="w-5 h-5" name={tech.icon} />
                       </motion.div>
-                      <h1 className="text-sm">{tech.title}</h1>
+                      <h1 className="text-sm dark:text-[#B3B8C4]">{tech.title}</h1>
                     </Badge>
                   </motion.div>
                 ))}
@@ -141,7 +141,7 @@ const AboutMe: React.FC = () => {
                       >
                         <StackIcon className="w-5 h-5" name={tech.icon} />
                       </motion.div>
-                      <h1 className="text-sm">{tech.title}</h1>
+                      <h1 className="text-sm dark:text-[#B3B8C4]">{tech.title}</h1>
                     </Badge>
                   </motion.div>
                 ))}
@@ -149,7 +149,7 @@ const AboutMe: React.FC = () => {
             </div>
           </div>
           <div id="experience">
-            <div className="space-y-6 bg-white/50 backdrop-blur-sm">
+            <div className="space-y-6 bg-white/50 dark:bg-[#161F33] backdrop-blur-sm">
               <h1 className="font-bold text-2xl md:text-3xl">Experience</h1>
               <div>
                 {experiences.map((exp, index) => (

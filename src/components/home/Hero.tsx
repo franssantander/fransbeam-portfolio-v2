@@ -18,15 +18,15 @@ const Hero: React.FC = () => {
                 duration: 0.8,
                 ease: "easeOut",
               }}
-              className="space-y-3 bg-white/80 backdrop-blur-none"
+              className="space-y-3 dark:bg-[#161F33] bg-white/80 backdrop-blur-none"
             >
-              <h3 className="uppercase text-neutral-500 text-xs font-semibold">
+              <h3 className="uppercase text-neutral-500 dark:text-[#B3B8C4] text-xs font-semibold">
                 Full-Stack Software Engineer | UI/UX Designer
               </h3>
               <h1 className="font-black text-2xl sm:text-5xl/14">
                 Building Digital Experiences with Code & Design
               </h1>
-              <p className="text-neutral-500 text-base/8 max-w-xl">
+              <p className="text-neutral-500 dark:text-[#B3B8C4] text-base/8 max-w-xl">
                 I craft seamless, high-performing web applications and intuitive
                 user experiences. With a passion for both engineering and
                 design, I bridge the gap between functionality and aesthetics to

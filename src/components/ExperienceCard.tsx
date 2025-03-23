@@ -25,22 +25,22 @@ const ExperienceCard: React.FC<ExperienceType> = (props) => {
               <img className="w-32" src={`/companylogo/${logo}`} alt={name} />
             </CardContent>
           </Card>
-          <div className="space-y-1 bg-white rounded-full">
+          <div className="space-y-1 bg-white dark:bg-[#161F33] rounded-full">
             <h1 className="font-bold text-lg">{position}</h1>
             <div className="flex items-center gap-x-3">
-              <h3 className="text-neutral-500 text-xs">{name}</h3>
+              <h3 className="text-neutral-500 dark:text-[#B3B8C4] text-xs">{name}</h3>
               <Icon
                 icon="tabler:circle-filled"
-                className="text-neutral-400"
+                className="text-neutral-400 dark:text-[#B3B8C4]"
                 fontSize={6}
               />
-              <h3 className="text-neutral-500 text-xs">{year}</h3>
+              <h3 className="text-neutral-500 dark:text-[#B3B8C4] text-xs">{year}</h3>
             </div>
           </div>
         </div>
         <ul className="list-disc space-y-3 text-neutral-500 text-sm/7 pt-5 ml-4">
           {exp_list.map((list, index) => (
-            <li className="bg-white" key={index}>
+            <li className="bg-white dark:bg-[#161F33] dark:text-[#B3B8C4]" key={index}>
               {list}
             </li>
           ))}

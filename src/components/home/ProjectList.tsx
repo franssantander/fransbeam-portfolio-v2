@@ -75,9 +75,9 @@ const ProjectList: React.FC<Project> = (props) => {
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }}
           >
-            <div className="space-y-5 mt-4 bg-white rounded-2xl backdrop-blur-sm">
+            <div className="space-y-5 mt-4 bg-white dark:bg-[#161F33] rounded-2xl backdrop-blur-sm">
               <div className="space-y-1">
-                <h3 className="text-neutral-500 text-xs uppercase font-semibold">
+                <h3 className="text-neutral-500 dark:text-[#B3B8C4] text-xs uppercase font-semibold">
                   {type}
                 </h3>
                 <div className="flex items-center gap-x-2 relative">
@@ -90,12 +90,12 @@ const ProjectList: React.FC<Project> = (props) => {
                   </a>
                 </div>
               </div>
-              <p className="text-base/7 text-neutral-500">{desc}</p>
+              <p className="text-base/7 text-neutral-500 dark:text-[#B3B8C4]">{desc}</p>
               {features.map((feature) => (
                 <ul className="hidden md:block">
                   <li className="flex items-center gap-x-3">
                     <Icon color="#803AEA" icon="lucide:sparkle" fontSize={16} />
-                    <p className="text-xs/5 text-neutral-500">{feature}</p>
+                    <p className="text-xs/5 text-neutral-500 dark:text-[#B3B8C4]">{feature}</p>
                   </li>
                 </ul>
               ))}

@@ -25,7 +25,7 @@ const DesignView: React.FC = () => {
       <div className="w-full h-full max-w-7xl mx-auto px-4 py-24 md:py-32">
         <Button className="w-14" variant="link">
           <Link
-            className="flex items-center justify-between gap-x-2 text-neutral-600 w-14 group"
+            className="flex items-center justify-between gap-x-2 text-neutral-600 dark:text-[#B3B8C4] w-14 group"
             to="/designs"
           >
             <motion.div
@@ -35,7 +35,7 @@ const DesignView: React.FC = () => {
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
               <Icon
-                className="text-neutral-600"
+                className="text-neutral-600 dark:text-[#B3B8C4]"
                 icon="lucide:arrow-left"
                 fontSize={24}
               />
@@ -55,7 +55,7 @@ const DesignView: React.FC = () => {
                 <img src={`${filepath}${overview_cover}`} alt={title} />
                 <div className="space-y-6">
                   <h1 className="font-bold text-2xl md:text-3xl">Overview</h1>
-                  <p className="text-neutral-500 max-w-2xl">{overview}</p>
+                  <p className="text-neutral-500 dark:text-[#B3B8C4] max-w-2xl">{overview}</p>
                 </div>
               </div>
               <div className="md:flex space-y-30 sm:space-y-10 md:gap-x-14">

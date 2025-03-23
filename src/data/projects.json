@@ -12,6 +12,10 @@
         "icon": "reactjs"
       },
       {
+        "title": "TypeScript",
+        "icon": "typescript"
+      },
+      {
         "title": "Laravel",
         "icon": "laravel"
       },
@@ -26,6 +30,10 @@
       {
         "title": "Mantine UI",
         "icon": null
+      },
+      {
+        "title": "Framer Motion",
+        "icon": "framer"
       }
     ],
     "features": [
@@ -49,6 +57,10 @@
         "icon": "reactjs"
       },
       {
+        "title": "TypeScript",
+        "icon": "typescript"
+      },
+      {
         "title": "Laravel",
         "icon": "laravel"
       },
@@ -61,8 +73,12 @@
         "icon": "redux"
       },
       {
-        "title": "Mantine UI",
-        "icon": null
+        "title": "Shadcn UI",
+        "icon": "shadcnui"
+      },
+      {
+        "title": "Framer Motion",
+        "icon": "framer"
       }
     ],
     "features": [
@@ -85,20 +101,12 @@
         "icon": "reactjs"
       },
       {
-        "title": "Laravel",
-        "icon": "laravel"
+        "title": "JavaScript",
+        "icon": "js"
       },
       {
         "title": "Tailwind CSS",
         "icon": "tailwindcss"
-      },
-      {
-        "title": "Tanstack Query",
-        "icon": "redux"
-      },
-      {
-        "title": "Mantine UI",
-        "icon": null
       }
     ],
     "features": [
@@ -121,20 +129,12 @@
         "icon": "reactjs"
       },
       {
-        "title": "Laravel",
-        "icon": "laravel"
+        "title": "JavaScript",
+        "icon": "js"
       },
       {
         "title": "Tailwind CSS",
         "icon": "tailwindcss"
-      },
-      {
-        "title": "Tanstack Query",
-        "icon": "redux"
-      },
-      {
-        "title": "Mantine UI",
-        "icon": null
       }
     ],
     "features": [
@@ -152,24 +152,16 @@
     "live_demo": "https://franssantander.github.io/Drumpad-App-JS/",
     "techstacks": [
       {
-        "title": "React",
-        "icon": "reactjs"
+        "title": "HTML",
+        "icon": "html5"
       },
       {
-        "title": "Laravel",
-        "icon": "laravel"
+        "title": "CSS",
+        "icon": "css3"
       },
       {
-        "title": "Tailwind CSS",
-        "icon": "tailwindcss"
-      },
-      {
-        "title": "Tanstack Query",
-        "icon": "redux"
-      },
-      {
-        "title": "Mantine UI",
-        "icon": null
+        "title": "JavaScript",
+        "icon": "js"
       }
     ],
     "features": [

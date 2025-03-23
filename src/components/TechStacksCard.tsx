@@ -23,7 +23,7 @@ const TechStacksCard: React.FC<TechStacksCardProps> = (props) => {
       whileHover={{ rotate: -6 }}
       transition={{ type: "spring", stiffness: 300, damping: 15 }}
     >
-      <Badge className="text-md gap-x-3 bg-white" variant="outline">
+      <Badge className="text-md gap-x-3 bg-white dark:bg-[#161F33]" variant="outline">
         <motion.div
           className="flex items-center gap-x-1 px-2 py-1 justify-center hover:bg-gradient-to-r hover:from-[#803AEA] hover:to-violet-600 
                  hover:text-transparent hover:bg-clip-text hover:font-medium"

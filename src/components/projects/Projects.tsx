@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
             />
 
             <h1 className="font-bold text-2xl lg:text-3xl">My Projects</h1>
-            <p className="text-neutral-500 max-w-lg m-auto">
+            <p className="text-neutral-500 dark:text-[#B3B8C4] max-w-lg m-auto">
               Explore my work and see how I merge creativity with technology to
               deliver impactful projects.
             </p>
